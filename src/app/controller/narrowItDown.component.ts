@@ -16,8 +16,12 @@ export class NarrowItDown {
   }
 
   search(searchValue: string){
-      this.searched=true;
-      this.found=this.menuRepo.getMatchedMenuItems(searchValue);
+    this.searched=true;
+    if(searchValue.length===0){
+      this.found=[];
+      return;
+    }
+    this.found=this.menuRepo.getMatchedMenuItems(searchValue);
   }
 
   getSearchedItems(): MenuItem[] {
