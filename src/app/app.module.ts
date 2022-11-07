@@ -7,10 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpDataSource, URL } from "./model/http.datasource";
 import { MenuRepo } from './model/menu.repository.model'; 
 import { SiIterativeDirective } from './directives/foundItems.directive';
+import { NarrowItDown } from './controller/narrowItDown.component';
 
 @NgModule({
   declarations: [
-    AppComponent, SiIterativeDirective
+    AppComponent, SiIterativeDirective, NarrowItDown
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,1 @@
-<form (ngSubmit)="search(searchValue)">
-  <div>
-    <input name="search-val" [(ngModel)] = "searchValue"/>
-    <button type="submit">Narrow it down for me!</button>
-  </div>
-</form>
-<table>
-  <tr *siFound="let item of found">
-    <td>{{item.id}}</td>
-    <td>{{item.short_name}}</td>
-    <td>{{item.description}}</td>
-    <td><button (click)="removeMenuItem(item.id)">Don't want this one!</button></td>
-  </tr>
-</table>
+<narrow-it-down-controller> </narrow-it-down-controller>
